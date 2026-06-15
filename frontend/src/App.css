@@ -1,0 +1,76 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3 {
+  color: #333;
+}
+
+/* Container */
+.task-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 20px;
+  justify-content: center;
+}
+
+/* Card */
+.task-card {
+  background: white;
+  width: 280px;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.task-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Status */
+.status {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 8px;
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.status.Pending {
+  background: #ffe58f;
+  color: #8a6d00;
+}
+
+.status.Completed {
+  background: #b7eb8f;
+  color: #135200;
+}
+
+/* Buttons */
+.buttons {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.edit {
+  background: #1890ff;
+  color: white;
+}
+
+.delete {
+  background: #ff4d4f;
+  color: white;
+}
